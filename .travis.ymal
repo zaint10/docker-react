@@ -8,4 +8,4 @@ brefore_install:
   - docker build -t wolvezine24/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e "CI=true" wolvezine24/docker-react npm run test
+  - docker run -e "CI=true" wolvezine24/docker-react npm run test -- --coverage
